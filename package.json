@@ -1,5 +1,5 @@
 {
-  "name": "mi-api",
+  "name": "@salamwaddah/mi-api",
   "version": "0.16.1",
   "license": "MIT",
   "description": "Control Mi Home devices, such as Mi Robot Vacuums, Mi Air Purifiers, Mi Smart Home Gateway (Aqara) and more",

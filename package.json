@@ -14,7 +14,7 @@
     "mijia"
   ],
   "bin": {
-    "miio": "./cli/index.js"
+    "miio": "cli/index.js"
   },
   "scripts": {
     "test": "node_modules/.bin/eslint ."

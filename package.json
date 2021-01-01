@@ -1,9 +1,13 @@
 {
-  "name": "miio",
-  "version": "0.15.4",
+  "name": "mijia-io",
+  "version": "0.16.4",
   "license": "MIT",
   "description": "Control Mi Home devices, such as Mi Robot Vacuums, Mi Air Purifiers, Mi Smart Home Gateway (Aqara) and more",
-  "repository": "aholstenson/miio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salamwaddah/mijia-io.git"
+  },
+  "private": false,
   "main": "lib/index.js",
   "keywords": [
     "xiaomi",

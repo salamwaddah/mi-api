@@ -108,4 +108,5 @@ Id                        | Type              | Auto-token | Support      | Note
 `yeelink.light.lamp1`     | Light             | No         | ✅ Good      |
 `yeelink.light.mono1`     | Light             | No         | ✅ Good      |
 `yeelink.light.color1`    | Light             | No         | ✅ Good      | 
+`yeelink.light.color5`    | Light             | No         | ✅ Good      | Verified with real device.
 `yeelink.light.strip1`    | Light             | No         | ⚠️ Untested  | Support added, verification with real device needed.

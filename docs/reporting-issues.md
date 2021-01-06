@@ -20,7 +20,7 @@ debug information. You will need to have the `miio` command line interface
 installed to get some of this information. You can install it via `npm` in a
 terminal window:
 
-`npm install -g miio`
+`npm install -g mijia-io`
 
 The `miio` tool comes with a command for inspecting a device. You will need
 either the device id or address of your device. To use the inspect tool run:

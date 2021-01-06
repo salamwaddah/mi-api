@@ -8,7 +8,7 @@ managing access to devices by storing tokens of devices.
 
 You can install the command line tool with:
 
-`npm install -g miio`
+`npm install -g mijia-io`
 
 ## Discovering devices on current network
 

@@ -8,7 +8,7 @@ miIO protocol.
 The command line application can help with discovering if a device speaks the
 miIO protocol. Get started by installing the command line application:
 
-`npm install -g miio`
+`npm install -g mijia-io`
 
 Run the app in discovery mode to list devices on your network:
 

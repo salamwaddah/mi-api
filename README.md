@@ -15,13 +15,13 @@ them.
 
 Currently, supported devices are:
 
-* Yeelights (White Bulb, Color Bulb, Desk Lamp and Strip)
-* Air Purifiers
-* Mi Humidifier
-* Mi Smart Socket Plug and Power Strips
-* Mi Robot Vacuum
-* Mi Smart Home Gateway (Aqara) and accessories - switches, sensors, etc
-* Philips Light Bulb and Eyecare Lamp
+- Yeelights (White Bulb, Color Bulb, Desk Lamp and Strip)
+- Air Purifiers
+- Mi Humidifier
+- Mi Smart Socket Plug and Power Strips
+- Mi Robot Vacuum
+- Mi Smart Home Gateway (Aqara) and accessories - switches, sensors, etc
+- Philips Light Bulb and Eyecare Lamp
 
 See [documentation for devices](docs/devices/README.md) for information about the types, their API and supported device
 models. You can also check
@@ -52,23 +52,24 @@ Resolve a handle to the device:
 
 ```javascript
 // Resolve a device, resolving the token automatically or from storage
-io.device({address: '192.168.100.8'})
-  .then(device => console.log('Connected to', device))
-  .catch(err => handleErrorHere);
+io.device({ address: '192.168.100.8' })
+  .then((device) => console.log('Connected to', device))
+  .catch((err) => handleErrorHere);
 
 // Resolve a device, specifying the token (see below for how to get the token)
-io.device({address: '192.168.100.8', token: 'token-as-hex'})
-  .then(device => console.log('Connected to', device))
-  .catch(err => handleErrorHere);
+io.device({ address: '192.168.100.8', token: 'token-as-hex' })
+  .then((device) => console.log('Connected to', device))
+  .catch((err) => handleErrorHere);
 ```
 
 Call methods to interact with the device:
 
 ```javascript
 // Switch the power of the device
-device.togglePower()
-  .then(on => console.log('Power is now', on))
-  .catch(err => handleErrorHere);
+device
+  .togglePower()
+  .then((on) => console.log('Power is now', on))
+  .catch((err) => handleErrorHere);
 
 // Using async/await
 await device.togglePower();
@@ -78,10 +79,11 @@ Listen to events such as property changes and actions:
 
 ```javascript
 // Listen for power changes
-device.on('power', power => console.log('Power changed to', power));
+device.on('power', (power) => console.log('Power changed to', power));
 
 // The device is available for event handlers
-const handler = ({action}, device) => console.log('Action', action, 'performed on', device);
+const handler = ({ action }, device) =>
+  console.log('Action', action, 'performed on', device);
 device1.on('action', handler);
 device2.on('action', handler);
 ```
@@ -94,9 +96,7 @@ if (device.matches('cap:temperature')) {
 }
 
 if (device.matches('cap:switchable-power')) {
-  device.setPower(false)
-    .then(console.log)
-    .catch(console.error);
+  device.setPower(false).then(console.log).catch(console.error);
 }
 ```
 
@@ -124,10 +124,10 @@ Example using `io.devices()`:
 
 ```javascript
 const devices = io.devices({
-  cacheTime: 300 // 5 minutes. Default is 1800 seconds (30 minutes)
+  cacheTime: 300, // 5 minutes. Default is 1800 seconds (30 minutes)
 });
 
-devices.on('available', device => {
+devices.on('available', (device) => {
   if (device.matches('placeholder')) {
     // This device is either missing a token or could not be connected to
   } else {
@@ -135,18 +135,18 @@ devices.on('available', device => {
   }
 });
 
-devices.on('unavailable', device => {
+devices.on('unavailable', (device) => {
   // Device is no longer available and is destroyed
 });
 ```
 
 `io.devices()` supports these options:
 
-* `cacheTime`, the maximum amount of seconds a device can be unreachable before it becomes unavailable. Default: `1800`
-* `filter`, function used to filter what devices are connected to. Default: `reg => true`
-* `skipSubDevices`, if sub devices on Aqara gateways should be skipped. Default: `false`
-* `useTokenStorage`, if tokens should be fetched from storage (see device management). Default: `true`
-* `tokens`, object with manual mapping between ids and tokens (advanced, use [Device management](docs/management.md) if
+- `cacheTime`, the maximum amount of seconds a device can be unreachable before it becomes unavailable. Default: `1800`
+- `filter`, function used to filter what devices are connected to. Default: `reg => true`
+- `skipSubDevices`, if sub devices on Aqara gateways should be skipped. Default: `false`
+- `useTokenStorage`, if tokens should be fetched from storage (see device management). Default: `true`
+- `tokens`, object with manual mapping between ids and tokens (advanced, use [Device management](docs/management.md) if
   possible)
 
 See [Advanced API](docs/advanced-api.md) for details about `io.browse()`.

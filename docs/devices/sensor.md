@@ -1,8 +1,8 @@
 # Sensor
 
-* `device.type`: `switch`
-* **Models**: Aqara Temperature and Humidity Sensor
-* **Model identifiers**: `lumi.sensor_ht`
+- `device.type`: `switch`
+- **Models**: Aqara Temperature and Humidity Sensor
+- **Model identifiers**: `lumi.sensor_ht`
 
 The sensor type is used for things that are primarily a sensor. The capabilities
 described below can be used without the type being `sensor` in which case the
@@ -18,7 +18,7 @@ For when the device supports measuring the temperature.
 
 ### Properties
 
-* `temperature` - temperature in degrees Celsius
+- `temperature` - temperature in degrees Celsius
 
 ### `device.temperature: number`
 
@@ -30,7 +30,7 @@ For when the device supports measuring the relative humidity.
 
 ### Properties
 
-* `humidity` - relative humidity in percent between 0 and 100
+- `humidity` - relative humidity in percent between 0 and 100
 
 ### `device.humidity: number`
 
@@ -43,7 +43,7 @@ products uses tha name `aqi` internally but seems to measure PM2.5.
 
 ### Properties
 
-* `aqi` - Air Quality Index number
+- `aqi` - Air Quality Index number
 
 ### `device.aqi: number`
 
@@ -55,7 +55,7 @@ For when the device supports measuring illuminance in Lux.
 
 ### Properties
 
-* `illuminance` - the current illuminance in Lux
+- `illuminance` - the current illuminance in Lux
 
 ### `device.illuminance: number`
 
@@ -67,7 +67,7 @@ For when the device supports measuring the atmospheric pressure.
 
 ### Properties
 
-* `pressure` - Atmospheric pressure
+- `pressure` - Atmospheric pressure
 
 ### `device.pressure: number`
 

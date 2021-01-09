@@ -1,7 +1,7 @@
 # Power Outlets
 
-* **Devices**: No outlets currently supported
-* **Model identifiers**: No outlets currently supported
+- **Devices**: No outlets currently supported
+- **Model identifiers**: No outlets currently supported
 
 The supported models of power outlets are mapped into a [`power-outlet`][power-outlet] with support for [power switching][switchable-power].
 
@@ -10,7 +10,7 @@ The supported models of power outlets are mapped into a [`power-outlet`][power-o
 ### Check if device is a power strip
 
 ```javascript
-if(device.matches('type:power-strip')) {
+if (device.matches('type:power-strip')) {
   /*
    * This device is a power strip.
    */
@@ -45,10 +45,10 @@ await device.power(true);
 
 ### Power - [`cap:power`][power] and [`cap:switchable-power`][switchable-power]
 
-* `device.power()` - get if the outlets currently have power
-* `device.power(boolean)` - switch if outlets have power
-* `device.setPower(boolean)` - switch if outlets have power
-* `device.on(power, isOn => ...)` - listen for power changes
+- `device.power()` - get if the outlets currently have power
+- `device.power(boolean)` - switch if outlets have power
+- `device.setPower(boolean)` - switch if outlets have power
+- `device.on(power, isOn => ...)` - listen for power changes
 
 [power-outlet]: http://abstract-things.readthedocs.io/en/latest/electrical/outlets.html
 [sensor]: http://abstract-things.readthedocs.io/en/latest/sensors/index.html

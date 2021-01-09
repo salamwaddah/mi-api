@@ -46,6 +46,7 @@ Name                          | Type          | Auto-token | Support     | Note
 ------------------------------|---------------|------------|-------------|--------
 Mi Air Purifier 1             | Air purifier  | Yes        | ⚠️ Untested  |
 Mi Air Purifier 2             | Air purifier  | Yes        | ✅ Good      |
+Mi Air Purifier 3             | Air purifier  | Yes        | ⚠️ Untested  |
 Mi Air Purifier Pro           | Air purifier  | Yes        | ✅ Basic     | Some of the new features and sensors are not supported.
 Mi Flora                      | -             | -          | ❌ None      | Communicates using Bluetooth.
 Mi Lunar Smart Sleep Sensor   | Generic       | Yes        | ⚠️ Generic   |
@@ -70,6 +71,7 @@ Mi Smart Power Strip 1        | Power strip   | Unknown    | ✅ Basic     | Set
 Mi Smart Power Strip 2        | Power strip   | Unknown    | ✅ Basic     | Setting power and mode is untested.
 Mi Rice Cooker                | -             | Unknown    | ❓ Unknown   |
 Mi Humidifier                 | Humidifier    | Yes        | ✅ Good      |
+Deerma Antibacterial Humidifier  | Humidifier    | Yes        | ⚠️ Untested      |
 Mi Smart Fan                  | Generic       | Unknown    | ⚠️ Generic   |
 Mi Air Quality Monitor (PM2.5)| Sensor        | Unknown    | ✅ Good      |
 Yeelight Desk Lamp            | Light         | No         | ✅ Good      |

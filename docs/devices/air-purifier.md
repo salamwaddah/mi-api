@@ -1,6 +1,6 @@
 # Air Purifier
 
-* **Devices**: Mi Air Purifier 1 & 2, Pro
+* **Devices**: Mi Air Purifier
 * **Model identifiers**: `zhimi.airpurifier.m1`, `zhimi.airpurifier.v1`, `zhimi.airpurifier.v2`, `zhimi.airpurifier.v3`, `zhimi.airpurifier.v6`
 
 Air purifiers are turned into devices of type [air-purifier][air-purifier]

@@ -1,7 +1,7 @@
 # Lights
 
-* **Devices**: Mi Yeelight Lamps, Philiphs Bulb, Philiphs Eye Care lamp
-* **Model identifiers**: `yeelink.light.lamp1`, `yeelink.light.mono1`, `yeelink.light.color1`, `yeelink.light.strip1`, `philips.light.sread1`, `philips.light.bulb`
+- **Devices**: Mi Yeelight Lamps, Philiphs Bulb, Philiphs Eye Care lamp
+- **Model identifiers**: `yeelink.light.lamp1`, `yeelink.light.mono1`, `yeelink.light.color1`, `yeelink.light.strip1`, `philips.light.sread1`, `philips.light.bulb`
 
 Lights are turned into devices of type [light][light] and by default support
 [power switching][switchable-power] and [dimming][dimmable]. Depending on the
@@ -12,7 +12,7 @@ model the light might [support color][colorable] and [fading][fading].
 ### Check if device is a light
 
 ```javascript
-if(device.matches('type:light')) {
+if (device.matches('type:light')) {
   /*
    * This device is a light.
    */
@@ -76,15 +76,15 @@ await device.decreaseBrightness(20);
 ### Check if color is supported
 
 ```javascript
-if(device.matches('cap:colorable')) {
+if (device.matches('cap:colorable')) {
   // Light supports setting color
 }
 
-if(device.matches('cap:colorable', 'cap:color:full')) {
+if (device.matches('cap:colorable', 'cap:color:full')) {
   // Light supports setting full range of colors
 }
 
-if(device.matches('cap:colorable', 'cap:color:temperature')) {
+if (device.matches('cap:colorable', 'cap:color:temperature')) {
   // Light supports color temperatures
 }
 ```
@@ -93,25 +93,25 @@ if(device.matches('cap:colorable', 'cap:color:temperature')) {
 
 ### Power - [`cap:power`][power] and [`cap:switchable-power`][switchable-power]
 
-* `device.power()` - get if the light is turned on
-* `device.power(boolean)` - switch the light on or off
-* `device.setPower(boolean)` - switch the light on or off
-* `device.on('powerChanged', isOn => ...)` - listen for power changes
+- `device.power()` - get if the light is turned on
+- `device.power(boolean)` - switch the light on or off
+- `device.setPower(boolean)` - switch the light on or off
+- `device.on('powerChanged', isOn => ...)` - listen for power changes
 
 ### Brightness - [`cap:brightness`][brightness] and [`cap:dimmable`][dimmable]
 
-* `device.brightness()` - get the brightness of the light
-* `device.brightness(percentage, duration)` - set the brightness of the light
-* `device.setBrightness(percentage, duration)` - set the brightness of the light
-* `device.increaseBrightness(percentage, duration)` - increase the brightness of the light
-* `device.decreaseBrightness(percentage, duration)` - decrease the brightness of the light
-* `device.on('brightnessChanged', bri => ...)` - listen for changes in brightness
+- `device.brightness()` - get the brightness of the light
+- `device.brightness(percentage, duration)` - set the brightness of the light
+- `device.setBrightness(percentage, duration)` - set the brightness of the light
+- `device.increaseBrightness(percentage, duration)` - increase the brightness of the light
+- `device.decreaseBrightness(percentage, duration)` - decrease the brightness of the light
+- `device.on('brightnessChanged', bri => ...)` - listen for changes in brightness
 
 ### Color - [`cap:colorable`][colorable]
 
-* `device.color()` - get the current color of the light
-* `device.color(color, duration)` - update the color of the light, color can be hex-values, Kelvin-values, see capability docs for details
-* `device.on('colorChanged', color => ...)` - listen for changes to color
+- `device.color()` - get the current color of the light
+- `device.color(color, duration)` - update the color of the light, color can be hex-values, Kelvin-values, see capability docs for details
+- `device.on('colorChanged', color => ...)` - listen for changes to color
 
 ### Fading - [`cap:fading`][fading]
 

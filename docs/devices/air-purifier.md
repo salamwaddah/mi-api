@@ -1,7 +1,7 @@
 # Air Purifier
 
-* **Devices**: Mi Air Purifier
-* **Model identifiers**: `zhimi.airpurifier.m1`, `zhimi.airpurifier.v1`, `zhimi.airpurifier.v2`, `zhimi.airpurifier.v3`, `zhimi.airpurifier.v6`
+- **Devices**: Mi Air Purifier
+- **Model identifiers**: `zhimi.airpurifier.m1`, `zhimi.airpurifier.v1`, `zhimi.airpurifier.v2`, `zhimi.airpurifier.v3`, `zhimi.airpurifier.v6`
 
 Air purifiers are turned into devices of type [air-purifier][air-purifier]
 and by default support [power switching][switchable-power] and [setting their mode][switchable-mode]. The Mi Air
@@ -13,7 +13,7 @@ Purifiers are also [sensors][sensor] and can report the [PM2.5 (air quality inde
 ### Check if device is an air purifier
 
 ```javascript
-if(device.matches('type:air-purifier')) {
+if (device.matches('type:air-purifier')) {
   /*
    * This device is an air purifier.
    */
@@ -74,62 +74,62 @@ console.log('Relative humidity:', rh);
 
 ### Power - [`cap:power`][power] and [`cap:switchable-power`][switchable-power]
 
-* `device.power()` - get if the air purifier is currently active
-* `device.power(boolean)` - switch the air purifier on, returns a promise
-* `device.setPower(boolean)` - change the power state of the device, returns a promise
-* `device.on(power, isOn => ...)` - listen for power changes
+- `device.power()` - get if the air purifier is currently active
+- `device.power(boolean)` - switch the air purifier on, returns a promise
+- `device.setPower(boolean)` - change the power state of the device, returns a promise
+- `device.on(power, isOn => ...)` - listen for power changes
 
 ### Mode - [`cap:mode`][mode] and [`cap:switchable-mode`][switchable-mode]
 
 The air purifiers have different modes that controls their speed.
 
-* `device.mode()` - get the current mode
-* `device.mode(string)` - set the current mode of the device, returns a promise
-* `device.setMode(string)` - set the current mode of the device, returns a promise
-* `device.modes()` - read-only array indicating the modes supports by the device
-* `device.on('modeChanged', mode => ...)` - listen for changes to the current mode
+- `device.mode()` - get the current mode
+- `device.mode(string)` - set the current mode of the device, returns a promise
+- `device.setMode(string)` - set the current mode of the device, returns a promise
+- `device.modes()` - read-only array indicating the modes supports by the device
+- `device.on('modeChanged', mode => ...)` - listen for changes to the current mode
 
 The modes supported change between different models, but most devices support:
 
-* `idle`, turn the device off
-* `auto`, set the device to automatic mode where it controls the speed itself
-* `silent`, lowest speed, for silent operation or night time
-* `favorite`, favorite level
+- `idle`, turn the device off
+- `auto`, set the device to automatic mode where it controls the speed itself
+- `silent`, lowest speed, for silent operation or night time
+- `favorite`, favorite level
 
 ### Sensor - [`type:sensor`][sensor]
 
-* `device.temperature()` - get the current temperature, see [`cap:temperature`][temp] for details
-* `device.on('temperature', temp => ...)` - listen to changes to the read temperature
-* `device.relativeHumidity()` - get the current relative humidity, see [`cap:relative-humidity`][humidity] for details
-* `device.on('relativeHumidityChanged', rh => ...)` - listen to changes to the relative humidity
-* `device.pm2_5` - get the current PM2.5 (Air Quality Index), see [`cap:pm2.5`][pm2.5] for details
-* `device.on('pm2.5Changed', pm2_5 => ...)` - listen to changes to the PM2.5 value
+- `device.temperature()` - get the current temperature, see [`cap:temperature`][temp] for details
+- `device.on('temperature', temp => ...)` - listen to changes to the read temperature
+- `device.relativeHumidity()` - get the current relative humidity, see [`cap:relative-humidity`][humidity] for details
+- `device.on('relativeHumidityChanged', rh => ...)` - listen to changes to the relative humidity
+- `device.pm2_5` - get the current PM2.5 (Air Quality Index), see [`cap:pm2.5`][pm2.5] for details
+- `device.on('pm2.5Changed', pm2_5 => ...)` - listen to changes to the PM2.5 value
 
 ### Buzzer settings - `cap:miio:buzzer`
 
-* `device.buzzer()` - boolean indicating if the buzzer (beep) is active
-* `device.buzzer(boolean)` - switch the buzzer on or off
-* `device.setBuzzer(boolean)` - switch the buzzer on or off
+- `device.buzzer()` - boolean indicating if the buzzer (beep) is active
+- `device.buzzer(boolean)` - switch the buzzer on or off
+- `device.setBuzzer(boolean)` - switch the buzzer on or off
 
 ### LED settings - `cap:miio:switchable-led`
 
 Turn the LED indicator on the device on or off.
 
-* `device.led()` - if the LED is on or off
-* `device.led(boolean)` - switch the LED on or off
+- `device.led()` - if the LED is on or off
+- `device.led(boolean)` - switch the LED on or off
 
 ### LED brightness - `cap:miio:led-brightness`
 
 Change the brightness of the LED on the device.
 
-* `device.ledBrightness()` - the LED brightness, `bright`, `dim` or `off`
-* `device.ledBrightness(string)` - set the brightness of the LED
+- `device.ledBrightness()` - the LED brightness, `bright`, `dim` or `off`
+- `device.ledBrightness(string)` - set the brightness of the LED
 
 ### Other
 
-* `device.favoriteLevel()` - get the speed the device should run at when mode is `favorite`. Between 0 and 16.
-* `device.favoriteLevel(level)` - set the speed the device should run at when mode is `favorite`. Between 0 and 16.
-* `device.setFavoriteLevel(number)` - set the speed for mode `favorite`
+- `device.favoriteLevel()` - get the speed the device should run at when mode is `favorite`. Between 0 and 16.
+- `device.favoriteLevel(level)` - set the speed the device should run at when mode is `favorite`. Between 0 and 16.
+- `device.setFavoriteLevel(number)` - set the speed for mode `favorite`
 
 [air-purifier]: http://abstract-things.readthedocs.io/en/latest/climate/air-purifiers.html
 [sensor]: http://abstract-things.readthedocs.io/en/latest/sensors/index.html

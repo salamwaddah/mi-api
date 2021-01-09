@@ -90,25 +90,35 @@ __Note:__ This table does not include Aqara (Smart Home Gateway) devices as thei
 Id                        | Type              | Auto-token | Support      | Note
 --------------------------|-------------------|------------|--------------|------
 `zhimi.airpurifier.m1`    | Air Purifier      | Yes        | ✅ Good      |
-`zhimi.airpurifier.v1`    | Air Purifier`     | Yes        | ✅ Good      |
+`zhimi.airpurifier.v1`    | Air Purifier     | Yes        | ✅ Good      |
 `zhimi.airpurifier.v2`    | Air Purifier      | Yes        | ✅ Good      |
 `zhimi.airpurifier.v3`    | Air Purifier      | Unknown    | ⚠️ Untested  |
 `zhimi.airpurifier.v4`    | -                 | Unknown    | ⚠️ Generic   | Testing needed to check compatibility.
 `zhimi.airpurifier.v5`    | -                 | Unknown    | ⚠️ Generic   | Testing needed to check compatibility.
 `zhimi.airpurifier.v6`    | Air Purifier      | Yes        | ✅ Basic     |
 `zhimi.humidifier.v1`     | Humidifier        | Unknown    | ⚠️ Untested  |
+`zhimi.humidifier.ca1`     | Humidifier        | Unknown    | ⚠️ Untested  |
 `chuangmi.plug.m1`        | Power plug        | Yes        | ✅ Good      |
 `chuangmi.plug.v1`        | Power plug        | Yes        | ✅ Good      |
 `chuangmi.plug.v2`        | Power plug        | Yes        | ✅ Good      |
+`chuangmi.plug.v3`        | Power plug        | Unknown        | ⚠️ Untested      |
 `qmi.powerstrip.v1`       | Power strip       | Yes        | ⚠️ Untested  |
 `zimi.powerstrip.v2`      | Power strip       | Yes        | ⚠️ Untested  |
 `rockrobo.vaccum.v1`      | Vacuum            | No         | ✅ Basic     | DND, timers and mapping features are not supported.
 `rockrobo.vaccum.s5`      | Vacuum            | No         | ✅ Basic     | DND, timers and mapping features are not supported.
+`roborock.vacuum.s5e`      | Vacuum       | No        | ⚠️ Untested  |
+`roborock.vacuum.a10`      | Vacuum       | No        | ⚠️ Untested  |
+`roborock.vacuum.m1s`      | Vacuum       | No        | ⚠️ Untested  |
 `lumi.gateway.v1`         | Generic           | Yes        | ⚠️ Generic   | API used to access sub devices not supported.
 `lumi.gateway.v2`         | Gateway           | Yes        | ✅ Basic     |
 `lumi.gateway.v3`         | Gateway           | Yes        | ✅ Basic     |
 `yeelink.light.lamp1`     | Light             | No         | ✅ Good      |
+`yeelink.light.lamp2`     | Light             | No         | ⚠️ Untested      |
 `yeelink.light.mono1`     | Light             | No         | ✅ Good      |
 `yeelink.light.color1`    | Light             | No         | ✅ Good      | 
+`yeelink.light.color2`    | Light             | No         | ⚠️ Untested      | 
+`yeelink.light.color3`    | Light             | No         | ⚠️ Untested      | 
+`yeelink.light.color4`    | Light             | No         | ⚠️ Untested      | 
 `yeelink.light.color5`    | Light             | No         | ✅ Good      | Verified with real device.
-`yeelink.light.strip1`    | Light             | No         | ⚠️ Untested  | Support added, verification with real device needed.
+`yeelink.light.strip1`    | Light             | No         | ⚠️ Untested  |
+`yeelink.light.strip2`    | Light             | No         | ⚠️ Untested  |

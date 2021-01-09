@@ -1,6 +1,6 @@
 {
   "name": "mijia-io",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "license": "MIT",
   "description": "Control Mi Home devices, such as Mi Robot Vacuums, Mi Air Purifiers, Mi Smart Home Gateway (Aqara) and more",
   "repository": {

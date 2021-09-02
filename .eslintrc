@@ -1,10 +1,10 @@
 {
-  "plugins": [ "node" ],
-  "extends": [ "eslint:recommended", "plugin:node/recommended" ],
+  "plugins": ["node"],
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
   "env": {},
   "globals": {},
   "rules": {
-		"strict": [ "error", "global" ],
+    "strict": ["error", "global"],
     "node/no-unsupported-features": [
       "error",
       {
@@ -12,16 +12,13 @@
       }
     ],
     "no-irregular-whitespace": 2,
-    "quotes": [
-      2,
-      "single"
-		],
-		"no-unused-vars": [
-			"error",
-			{ "vars": "all", "args": "none", "ignoreRestSiblings": false }
-		],
-		"eqeqeq": [ "error" ],
-		"no-throw-literal": [ "error" ],
-		"semi": [ "error", "always" ]
+    "quotes": [2, "single"],
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "none", "ignoreRestSiblings": false }
+    ],
+    "eqeqeq": ["error"],
+    "no-throw-literal": ["error"],
+    "semi": ["error", "always"]
   }
 }

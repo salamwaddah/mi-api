@@ -1,12 +1,12 @@
 # Controllers
 
-* **Devices**: Aqara Switch (round and square), Aqara Light Switch, Aqara Dual Light Switch
-* **Model identifiers**: `lumi.switch`, `lumi.switch.aq2`, `lumi.86sw1`, `lumi.86sw2`
+- **Devices**: Aqara Switch (round and square), Aqara Light Switch, Aqara Dual Light Switch
+- **Model identifiers**: `lumi.switch`, `lumi.switch.aq2`, `lumi.86sw1`, `lumi.86sw2`
 
 Controllers are devices whose primary function is to control something else.
 These devices will have the capability [`actions`][actions] and their primary
 function will be emitting events. Single button switches will be of the type
-[`button`][button] and other switches are translated into the type 
+[`button`][button] and other switches are translated into the type
 [`wall-controller`][wall-controller]. Controllers may also have the capability
 [`battery-level`][battery-level] if they can report their battery level.
 
@@ -15,7 +15,7 @@ function will be emitting events. Single button switches will be of the type
 ### Check if device supports actions
 
 ```javascript
-if(device.matches('cap:actions')) {
+if (device.matches('cap:actions')) {
   /*
    * This device is a controller of some sort.
    */
@@ -46,15 +46,15 @@ const actions = await device.actions();
 
 ### Actions - [`cap:actions`][actions]
 
-* `device.actions()` - get all of the available actions
-* `device.on('action', event => ...)` - listen for all actions
-* `device.on('action:<id>', data => ...)` - listen for action with name `<id>`
+- `device.actions()` - get all of the available actions
+- `device.on('action', event => ...)` - listen for all actions
+- `device.on('action:<id>', data => ...)` - listen for action with name `<id>`
 
 ## Models
 
 ### Aqara Button V1 - `lumi.switch`
 
-Round button connected to a Mi Gateway. Supports the actions `click`, 
+Round button connected to a Mi Gateway. Supports the actions `click`,
 `double_click`, `long_click_press` and `long_click_release`.
 
 ### Aqara Button V2 - `lumi.switch.v2`
@@ -71,7 +71,9 @@ When the action is `rotate` the data in the event will be an object including
 the key `amount`. Example use:
 
 ```javascript
-device.on('action:rotate', data => console.log('Rotation amount:', data.amount));
+device.on('action:rotate', (data) =>
+  console.log('Rotation amount:', data.amount)
+);
 ```
 
 ### Aqara Wall Switch, one button - `lumi.86sw1`

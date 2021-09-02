@@ -1,9 +1,13 @@
 {
-  "name": "miio",
-  "version": "0.15.4",
+  "name": "mijia-io",
+  "version": "0.18.2",
   "license": "MIT",
   "description": "Control Mi Home devices, such as Mi Robot Vacuums, Mi Air Purifiers, Mi Smart Home Gateway (Aqara) and more",
-  "repository": "aholstenson/miio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salamwaddah/mijia-io.git"
+  },
+  "private": false,
   "main": "lib/index.js",
   "keywords": [
     "xiaomi",
@@ -14,7 +18,7 @@
     "mijia"
   ],
   "bin": {
-    "miio": "./cli/index.js"
+    "miio": "cli/index.js"
   },
   "scripts": {
     "test": "node_modules/.bin/eslint ."
@@ -34,6 +38,17 @@
   },
   "devDependencies": {
     "eslint": "^4.14.0",
-    "eslint-plugin-node": "^5.2.1"
+    "eslint-plugin-node": "^5.2.1",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
+    "prettier": "2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md}": "prettier --write"
   }
 }

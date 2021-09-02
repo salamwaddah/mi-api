@@ -1,7 +1,7 @@
 # Gateways
 
-* **Devices**: Mi Smart Home Gateway 2 and 3
-* **Model identifiers**: `lumi.gateway.v2`, `lumi.gateway.v3`
+- **Devices**: Mi Smart Home Gateway 2 and 3
+- **Model identifiers**: `lumi.gateway.v2`, `lumi.gateway.v3`
 
 Support for the Mi Smart Home Gateway that provides access to a set of smaller
 devices such as switches, motion detection and temperature and humidity sensors.
@@ -15,7 +15,7 @@ key is used but if not a new key is generated and set for the API.
 ### Check if the device is a gateway
 
 ```javascript
-if(device.matches('type:miio:gateway')) {
+if (device.matches('type:miio:gateway')) {
   /*
    * This device is a Mi Gateway.
    */
@@ -26,7 +26,7 @@ if(device.matches('type:miio:gateway')) {
 
 ```javascript
 const children = device.children();
-for(const child of children) {
+for (const child of children) {
   // Do something with each child
 }
 ```
@@ -35,7 +35,7 @@ for(const child of children) {
 
 ### Children - [`cap:children`][children]
 
-* `device.children()` - get the children of the gateway. Returns an iterable without going via a promise.
-* `device.child(id)` - get a child via its identifier
+- `device.children()` - get the children of the gateway. Returns an iterable without going via a promise.
+- `device.child(id)` - get a child via its identifier
 
 [children]: http://abstract-things.readthedocs.io/en/latest/common/children.html

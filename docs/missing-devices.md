@@ -8,7 +8,7 @@ miIO protocol.
 The command line application can help with discovering if a device speaks the
 miIO protocol. Get started by installing the command line application:
 
-`npm install -g miio`
+`npm install -g mijia-io`
 
 Run the app in discovery mode to list devices on your network:
 
@@ -22,9 +22,9 @@ to be able to find it easily.
 If the device shows up feel free to open an issue about supporting the device.
 Include this information:
 
-* The name of the device model - such Mi Air Purifier or Mi Smart Power Strip 2
-* The model id from the output
-* If the token for the device displayed N/A or a hex value (don't include the hex value)
+- The name of the device model - such Mi Air Purifier or Mi Smart Power Strip 2
+- The model id from the output
+- If the token for the device displayed N/A or a hex value (don't include the hex value)
 
 ## Implementing a device
 

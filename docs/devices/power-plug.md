@@ -1,7 +1,7 @@
 # Power Plugs
 
-* **Devices**: Mi Smart Socket Plug, Aqara Plug
-* **Model identifiers**: `chuangmi.plug.v1`, `chuangmi.plug.v2`, `chuangmi.plug.m1`, `lumi.plug`
+- **Devices**: Mi Smart Socket Plug, Aqara Plug
+- **Model identifiers**: `chuangmi.plug.v1`, `chuangmi.plug.v2`, `chuangmi.plug.m1`, `lumi.plug`
 
 The supported models of power plugs are mapped into a [`power-plug`][power-plug] with support for [power switching][switchable-power].
 
@@ -10,7 +10,7 @@ The supported models of power plugs are mapped into a [`power-plug`][power-plug]
 ### Check if device is a power strip
 
 ```javascript
-if(device.matches('type:power-strip')) {
+if (device.matches('type:power-strip')) {
   /*
    * This device is a power strip.
    */
@@ -45,10 +45,10 @@ await device.power(true);
 
 ### Power - [`cap:power`][power] and [`cap:switchable-power`][switchable-power]
 
-* `device.power()` - get if the outlets currently have power
-* `device.power(boolean)` - switch if outlets have power
-* `device.setPower(boolean)` - switch if outlets have power
-* `device.on(power, isOn => ...)` - listen for power changes
+- `device.power()` - get if the outlets currently have power
+- `device.power(boolean)` - switch if outlets have power
+- `device.setPower(boolean)` - switch if outlets have power
+- `device.on(power, isOn => ...)` - listen for power changes
 
 ## Models
 

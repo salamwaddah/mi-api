@@ -24,6 +24,7 @@ exports.handler = function (argv) {
     log.plain();
 
     let parsedArgs = [];
+
     if (argv.params) {
       try {
         parsedArgs = JSON.parse(argv.params);

@@ -37,7 +37,7 @@
     "yargs": "^10.1.1"
   },
   "devDependencies": {
-    "eslint": "^4.14.0",
+    "eslint": "^8.27.0",
     "eslint-plugin-node": "^5.2.1",
     "husky": "^4.3.7",
     "lint-staged": "^10.5.3",

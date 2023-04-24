@@ -39,8 +39,8 @@
   "devDependencies": {
     "eslint": "^8.27.0",
     "eslint-plugin-node": "^5.2.1",
-    "husky": "^4.3.7",
-    "lint-staged": "^10.5.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "2.2.1"
   },
   "husky": {
